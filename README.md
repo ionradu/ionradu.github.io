@@ -1,2 +1,2 @@
 # Personal presentation
-https://ionradu.github.io/index.html
+https://ionradu.github.io

@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+/* font-family: 'Caveat', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Serif', serif;
+font-family: 'Seymour One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Tai Heritage Pro', serif; */
+
+
+
+.bloc1{
+    background-image:url(images1/pc.jpg);
+    height: auto;
+}
+
+  .title1{
+    display: flex;
+    flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 100px;
+    color: white;
+    padding-top: 70px;
+  }
+
+  .title2{
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size: 40px;
+    color: black; 
+    display: flex;
+    flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+  }
+
+  .presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 170px;
+  }
+  
+  .poza{
+    height: 280px;
+    width: 250px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+  }
+
+  .text{
+    padding-left: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  .sm{
+    height: 30px;
+    width: 30px;
+  }
+
+  .work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 170px;
+    padding-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+  .but{
+    text-decoration: none;
+    background-color: #29c5f6;
+    border-width: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    box-shadow: 5px 10px rgb(23, 82, 169)
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .bloc1{
+    background-image:url(images/mob.jpg);
+    }
+
+    .text{
+      padding-left: 15px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 900px){
+    .bloc1{
+      background-image:url(images/tab.jpg);
+      }
+
+      .text{
+        padding-left: 30px;
+      }
+  }
+
+  @media only screen and (min-width: 900px) and (max-width: 1400px){
+    .bloc1{
+      background-image:url(images/lap.jpg);
+      }
+
+      .text{
+        padding-left: 30px;
+      }
+  }

@@ -1,0 +1,58 @@
+.box1 {
+    margin-left: 20px;
+    padding:10px;
+    display: inline-block;
+    width: 600px;
+    }
+    
+    .box2 {
+    margin-left: 500px;
+    padding:10px;
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    border: none;
+    }
+    
+    .box3{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .facturatab {
+        margin-left:20px;
+        margin-bottom: 5px;
+        border-collapse: collapse;
+        display:block;
+         margin-right:20px;
+         display:block; 
+         margin-right:20px;
+    }
+    
+    td, th { 
+        font-size: 22px;
+        text-align: center;
+        border: solid 1px black;
+    }
+
+    .seria1{
+        border: none;
+        font-size:17px;
+        text-align: left;
+    
+        
+    }
+
+.seria2{
+    margin-left: 680px;
+    width:20%;
+}
+
+span{
+    margin-left:20px;
+}
+
+.spatiugol{
+    height: 400px; 
+}

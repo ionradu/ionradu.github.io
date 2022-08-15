@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> siteRealEstate</title>
+    <link href="css/all.css" rel="stylesheet">
+    <link href="style4.css" rel="stylesheet">
+</head>
+<body>
+
+   
+
+<div class="blocA1">
+
+    <div class="jumA11">
+        <div class="firm">
+            <img src="images/Logo.png" alt="Logo" class="logo"> 
+            <p class="titlu">Real Estate Group</p>
+        </div>
+        <nav>
+            <ul class="menu">
+              <li class="item"><a href="#">Home</a></li>
+              <li class="item"><a href="#">About</a></li>
+              <li class="item has-submenu">
+                <a tabindex="0">Services</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="#">Rentals</a></li>
+                  <li class="subitem"><a href="#">Buy a house</a></li>
+                  <li class="subitem"><a href="#">Furniture suppliers</a></li>
+                  <li class="subitem"><a href="#">Legal advising</a></li>
+                </ul>
+              </li>
+              <li class="item has-submenu">
+                <a tabindex="0">Plans</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="#">Freelancer</a></li>
+                  <li class="subitem"><a href="#">Startup</a></li>
+                  <li class="subitem"><a href="#">Enterprise</a></li>
+                </ul>
+              </li>
+              <li class="item"><a href="#">Blog</a></li>
+              <li class="item"><a href="#">Contact</a>
+              </li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+  
+        </div>
+
+        <script>
+            const toggle = document.querySelector(".toggle");
+            const menu = document.querySelector(".menu");
+            const items = document.querySelectorAll(".item");
+        
+            function toggleMenu() {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+            } else {
+                menu.classList.add("active");
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+            }
+            }
+        
+            function toggleItem() {
+            if (this.classList.contains("submenu-active")) {
+                this.classList.remove("submenu-active");
+            } else if (menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+                this.classList.add("submenu-active");
+            } else {
+                this.classList.add("submenu-active");
+            }
+            }
+        
+            function closeSubmenu(e) {
+            if (menu.querySelector(".submenu-active")) {
+                let isClickInside = menu
+                .querySelector(".submenu-active")
+                .contains(e.target);
+        
+                if (!isClickInside && menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+                }
+            }
+            }
+            toggle.addEventListener("click", toggleMenu, false);
+            for (let item of items) {
+            if (item.querySelector(".submenu")) {
+                item.addEventListener("click", toggleItem, false);
+            }
+            item.addEventListener("keypress", toggleItem, false);
+            }
+            document.addEventListener("click", closeSubmenu, false);
+        
+        </script>
+
+        <div class="jumA12">
+         
+            <fieldset>
+    
+    <legend>Search Criteria</legend><br><br>
+    
+    <label for="typeofservice"> Interested in :</label>
+    <select name="typeofservice" id="typeofservice">
+        <option value="Rent" selected>Rent a home</option>
+        <option value="Buy">Buy a home</option>
+    </select><br><br>
+    
+    
+    <div class="slidecontainer">
+    
+       <br>
+       <p>Your Budget: <span id="value"></span></p>
+        <input type="range" min="500" max="100000"  class="slider" id="myRange">
+        
+    </div>
+    
+    <script>
+        let slider = document.getElementById('myRange');
+    let output = document.getElementById('value');
+    
+    output.innerHTML = slider.value
+    
+    slider.oninput = function(){
+        output.innerHTML = this.value + ' EUR';
+    }
+    </script><br>
+  
+            </fieldset>
+    
+        </div>
+    
+    </div>
+
+<div class="blocA2">
+
+    <div class="text1">No 1 Real Estate company in 2022</div><br>
+
+    <div class="text2">Highly flexible and reliable Real Estate with over 20 years experience</div><br>
+
+    <div class="text3">You pay realtors because they have reach and proven results, and the Real Estate Group wants you to know it's extraordinary at both. It helps <br>that the results-driven sentiment here drives home the abstract idea of “extraordinary reach”</div>
+
+</div>
+
+<div class="blocA3">
+
+<div class="jumA31"><img src="images/imag1.jpg" alt="imag" class="imag1"></div>
+
+<div class="jumA32"> 
+    <p class="par31">Real Estate Is Our Passion</p> 
+
+    <p class="par32">Get To<br>
+     Know us.</p>
+
+     <p class="par33">Real estate cannot be lost or stolen, nor can it be carried away.<br>
+         Purchased with common sense, paid for in full, and managed with reasonable care,<br>
+          it is about the safest investment in the world.
+    </p>
+
+        <img src="images/facebook.png" alt="fb" class="imagini">
+        <img src="images/twitter.png" alt="twt" class="imagini">
+        <img src="images/pinterest.png" alt="pnt" class="imagini">
+        <img src="images/insta.png" alt="ig" class="imagini"></div>
+
+</div>
+
+<div class="blocA4">
+    <p class="par41">Check out</p><br>
+    <p class="par42">Featured Properties</p><br>
+    <p class="par43">View list of our short listed properties</p>
+</div>
+
+
+
+<div class="blocA5">
+
+<div class="blocImag">
+    <img class="slideImages" src="images/slide1.jpg"  alt="img">
+    <img class="slideImages" src="images/slide2.jpg" alt="img">
+    <img class="slideImages" src="images/slide3.jpg" alt="img">
+</div>
+
+<div class="blocButoane">
+
+    <button class="butoaneS" onclick="plusDivs(-1)">❮ Prev </button>
+    <button class="butoaneS" onclick="plusDivs(1)"> Next ❯</button>
+
+</div>
+
+<script>
+
+let slideIndex=1;
+showDivs(slideIndex);
+
+function plusDivs(n){
+showDivs(slideIndex += n);
+}  
+
+function showDivs(n){
+    let i;
+    let x = document.getElementsByClassName('slideImages');
+    if (n > x.length){
+        slideIndex = 1;
+    }
+    if (n < 1){
+        slideIndex = x.length;
+    }
+    for(i=0; i < x.length; i++){
+        x[i].style.display= "none";
+    }
+    x[slideIndex-1].style.display="block";
+}
+</script>
+</div>
+
+<div class="blocA6">
+<div class="blocA61">
+    <div class="parA61">
+        <h3>Why to buy a house?</h3>
+        <p>The pride of ownership, home value appreciation, mortgage interest<br>
+             deductions, and potential property tax deductions are a few of the<br>
+              best reasons <hr></p>
+            </div>
+        
+            <div class="parA62">
+                <h3>Capital Gains Exclusion</h3>
+                <p>You must meet both the ownership and use test (from the tax code). <br>
+                    You must have used and lived in the home (as your main residence)<br>
+                     for at least two years out of the five years before the date of the sale. <hr></p>
+                    </div>
+</div>
+
+<div class="blocA62">
+    <div class="parA61">
+        <h3>Equity Loans</h3>
+        <p>Consumers who carry credit card balances cannot deduct the interest paid,<br>
+             which can cost as much as 18% to 22%. Equity loan interest is often much <br>
+             less. For many homeowners who have built up some equity<hr></p>
+            </div>
+        
+<div class="parA62">
+<h3>Property Tax Deductions</h3>
+ <p>IRS Publication 530 contains tax information for first-time homebuyers.<br>
+     In general, you can deduct state and local real estate taxes. Most <br>
+     homeowners pay their property taxes <hr></p>
+</div>
+</div>
+
+</div>
+
+
+<div class="footer">
+    <a href="" target="_blank" class="ftrbtn">Cookies</a>
+    <a href="" target="_blank" class="ftrbtn">Personal data</a>
+    <a href="" target="_blank" class="ftrbtn">Legal information</a>
+    
+</div>
+
+
+
+
+
+</body>
